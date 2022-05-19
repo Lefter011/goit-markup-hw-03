@@ -159,6 +159,10 @@ footer li a:focus {
     border-color: transparent;
 }
 
+.talk-button:hover{
+    background-color: #188CE8;
+}
+
 /* Section Features */
 
 .features {
