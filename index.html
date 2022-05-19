@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,78 +18,88 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="container_center">
-      <a lang="en" href="index.html" class="page-logo"
-        ><span>Web</span>Studio</a
-      >
-      <nav>
-        <ul class="navigation">
-          <li class="naviation-item">
-            <a class="nav-link current" href="index.html">Студия</a>
-          </li>
-          <li class="naviation-item">
-            <a class="nav-link" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="naviation-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contact">
-        <li class="contac-item">
-          <a class="nav-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+    <header>
+      <div class="container_center">
+        <div class="header-nav">
+          <a lang="en" href="index.html" class="page-logo link"
+            ><span>Web</span>Studio</a
           >
-        </li>
-        <li class="contac-item">
-          <a class="nav-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <nav>
+            <ul class="navigation">
+              <li class="navigation-item">
+                <a class="nav-link current link" href="index.html">Студия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="nav-link link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-item">
+                <a class="nav-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-list-header">
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="main container_center">
-        <div class="main_information">
-          <h1 class="main-topic">
-            Эффективные решения <br />для вашего бизнеса<br />
-          </h1>
-          <button type="button" class="talk-button">Заказать услугу</button>
+      <section class="main">
+        <div class="container_center">
+          <div class="main_information">
+            <h1 class="main-topic">
+              Эффективные решения <br />для вашего бизнеса<br />
+            </h1>
+            <button type="button" class="talk-button">Заказать услугу</button>
+          </div>
         </div>
       </section>
-      <section class="features container_center">
-        <h2 lang="en" style="display: none">Features</h2>
-        <ul class="features-list">
-          <li class="features-item">
-            <h3 class="features-item-topic">Внимание к деталям</h3>
-            <p class="features-item-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-topic">Пунктуальность</h3>
-            <p class="features-item-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-topic">Планирование</h3>
-            <p class="features-item-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="features-item-topic">Современные технологии</h3>
-            <p class="features-item-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+      <section class="features">
+        <div class="container_center">
+          <h2 lang="en" style="display: none">Features</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="features-item-topic">Внимание к деталям</h3>
+              <p class="features-item-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-topic">Пунктуальность</h3>
+              <p class="features-item-text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-topic">Планирование</h3>
+              <p class="features-item-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="features-item-topic">Современные технологии</h3>
+              <p class="features-item-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="work container_center">
-        <h2 class="work-topic">Чем мы занимаемся</h2>
+      <section class="work ">
+        <div class="container_center">        <h2 class="work-topic">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-item">
             <img
@@ -110,8 +124,8 @@
           </li>
         </ul>
       </section>
-      <section class="team container_center">
-        <h2 class="team-topic">Наша команда</h2>
+      <section class="team">
+        <div class="container_center"><h2 class="team-topic">Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">
             <img
@@ -142,23 +156,34 @@
             <p class="team-item-text" lang="en">UI Designer</p>
           </li>
         </ul>
+      </div>
+    </div>
       </section>
     </main>
-    <footer class="container_center">
-      <a lang="en" href="index.html" class="page-logo"
-        ><span>Web</span>Studio</a
-      >
-      <address>
-        <ul class="contact">
-          <li class="contact-list">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="contact-list">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contact-list">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer>
+      <div class="container_center"> <div class="footer-nav">
+        <a lang="en" href="index.html" class="page-logo link"
+          ><span>Web</span>Studio</a
+        >
+        <address>
+          <ul class="contact-list-footer">
+            <li class="contact-item-footer">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="contact-item-footer">
+              <a
+                class="contact-link-footer link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item-footer">
+              <a class="contact-link-footer link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
     </footer>
   </body>
 </html>

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,188 +16,220 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"
+      defer
+    ></script>
+    <script src="./js/portfolio.js" defer></script>
   </head>
   <body>
-    <header class="container_center">
-      <a lang="en" href="index.html" class="page-logo"
-        ><span>Web</span>Studio</a
-      >
-      <nav>
-        <ul class="navigation">
-          <li class="naviation-item">
-            <a class="nav-link" href="index.html">Студия</a>
-          </li>
-          <li class="naviation-item">
-            <a class="nav-link current" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="naviation-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contact">
-        <li class="contac-item">
-          <a class="nav-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+    <header>
+      <div class="container_center">
+        <div class="header-nav">
+          <a lang="en" href="index.html" class="page-logo link"
+            ><span>Web</span>Studio</a
           >
-        </li>
-        <li class="contac-item">
-          <a class="nav-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <nav>
+            <ul class="navigation">
+              <li class="navigation-item">
+                <a class="nav-link link" href="index.html">Студия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="nav-link current link" href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a class="nav-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-list-header">
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section_filter_buttons">
         <h1 style="display: none"><span lang="en">Portfolio list</span></h1>
         <ul class="type_selection_filter_group">
-          <li>
+          <li class="type-selection-item">
             <button data-filter="type_all" class="is-checked">Все</button>
           </li>
-          <li>
+          <li class="type-selection-item">
             <button data-filter="type_website">Веб-сайты</button>
           </li>
-          <li>
+          <li class="type-selection-item">
             <button data-filter="type_applications">Приложения</button>
           </li>
-          <li>
+          <li class="type-selection-item">
             <button data-filter="type_design">Дизайн</button>
           </li>
-          <li>
+          <li class="type-selection-item">
             <button data-filter="type_marketing">Маркетинг</button>
           </li>
         </ul>
-        <ul class="jobs-list">
-          <li class="jobs_container type_applications type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_ap_1.jpg"
-                alt="Portfolio Application Seafood"
-              />
-              <h2 class="jobs-container-topic">
-                Ресторан <span lang="en">Seafood</span>
-              </h2>
-              <p class="jobs-container-text">Приложение</p></a
-            >
-          </li>
-          <li class="jobs_container type_website type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_web_1.jpg"
-                alt="Portfolio web-site Techcruck"
-              />
-              <h2 class="jobs-container-topic">Технокряк</h2>
-              <p class="jobs-container-text">Веб-сайт</p></a
-            >
-          </li>
-          <li class="jobs_container type_design type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_de_1.jpg"
-                alt="Portfolio poster New Orlean vs Golden Star"
-              />
-              <h2 class="jobs-container-topic">
-                Постер <span lang="en">New Orlean vs Golden Star</span>
-              </h2>
-              <p class="jobs-container-text">Дизайн</p></a
-            >
-          </li>
-          <li class="jobs_container type_marketing type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_mar_1.jpg"
-                alt="Portfolio project Prime"
-              />
-              <h2 class="jobs-container-topic">
-                Проект <span lang="en">Prime</span>
-              </h2>
-              <p class="jobs-container-text">Маркетинг</p></a
-            >
-          </li>
-          <li class="jobs_container type_applications type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_ap_2.jpg"
-                alt="Portfolio project Boxes"
-              />
-              <h2 class="jobs-container-topic">
-                Проект <span lang="en">Boxes</span>
-              </h2>
-              <p class="jobs-container-text">Приложение</p></a
-            >
-          </li>
-          <li class="jobs_container type_website type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_web_2.jpg"
-                alt="Portfolio Inspiration has no Borders"
-              />
-              <h2 class="jobs-container-topic" lang="en">
-                Inspiration has no Borders
-              </h2>
-              <p class="jobs-container-text">Веб-сайт</p></a
-            >
-          </li>
-          <li class="jobs_container type_design type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_de_2.jpg"
-                alt="Portfolio edition Limited Edition"
-              />
-              <h2 class="jobs-container-topic">
-                Издание <span lang="en">Limited Edition</span>
-              </h2>
-              <p class="jobs-container-text">Дизайн</p></a
-            >
-          </li>
-          <li class="jobs_container type_marketing type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_mar_2.jpg"
-                alt="Portfolio project LAB"
-              />
-              <h2 class="jobs-container-topic">
-                Проект <span lang="en">LAB</span>
-              </h2>
-              <p class="jobs-container-text">Маркетинг</p></a
-            >
-          </li>
-          <li class="jobs_container type_applications type_all">
-            <a class="jobs-container-link" href="#"
-              ><img
-                class="jobs-container-img"
-                src="./img/portfolio/img_ap_3.jpg"
-                alt="Portfolio project Growing Business"
-              />
-              <h2 class="jobs-container-topic" lang="en">Growing Business</h2>
-              <p class="jobs-container-text">Приложение</p></a
-            >
-          </li>
-        </ul>
+        <div class="container_center">
+          <div class="list_container">
+            <div class="jobs_container type_applications type_all jobs-link">
+              <a class="link" href="#">
+                <img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_ap_1.jpg"
+                  alt="Portfolio Application Seafood"
+                />
+                <h2 class="jobs-container-topic">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="jobs-container-text">Приложение</p></a
+              >
+            </div>
+            <div class="jobs_container type_website type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_web_1.jpg"
+                  alt="Portfolio web-site Techcruck"
+                />
+                <h2 class="jobs-container-topic">Технокряк</h2>
+                <p class="jobs-container-text">Веб-сайт</p></a
+              >
+            </div>
+            <div class="jobs_container type_design type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_de_1.jpg"
+                  alt="Portfolio poster New Orlean vs Golden Star"
+                />
+                <h2 class="jobs-container-topic">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="jobs-container-text">Дизайн</p></a
+              >
+            </div>
+            <div class="jobs_container type_marketing type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_mar_1.jpg"
+                  alt="Portfolio project Prime"
+                />
+                <h2 class="jobs-container-topic">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="jobs-container-text">Маркетинг</p></a
+              >
+            </div>
+            <div class="jobs_container type_applications type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_ap_2.jpg"
+                  alt="Portfolio project Boxes"
+                />
+                <h2 class="jobs-container-topic">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="jobs-container-text">Приложение</p></a
+              >
+            </div>
+            <div class="jobs_container type_website type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_web_2.jpg"
+                  alt="Portfolio Inspiration has no Borders"
+                />
+                <h2 class="jobs-container-topic" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="jobs-container-text">Веб-сайт</p></a
+              >
+            </div>
+            <div class="jobs_container type_design type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_de_2.jpg"
+                  alt="Portfolio edition Limited Edition"
+                />
+                <h2 class="jobs-container-topic">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="jobs-container-text">Дизайн</p></a
+              >
+            </div>
+            <div class="jobs_container type_marketing type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_mar_2.jpg"
+                  alt="Portfolio project LAB"
+                />
+                <h2 class="jobs-container-topic">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="jobs-container-text">Маркетинг</p></a
+              >
+            </div>
+            <div class="jobs_container type_applications type_all jobs-link">
+              <a class="link" href="#"
+                ><img
+                  class="jobs-container-img"
+                  src="./img/portfolio/img_ap_3.jpg"
+                  alt="Portfolio project Growing Business"
+                />
+                <h2 class="jobs-container-topic" lang="en">Growing Business</h2>
+                <p class="jobs-container-text">Приложение</p></a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="container_center">
-      <a lang="en" href="index.html" class="page-logo"
-        ><span>Web</span>Studio</a
-      >
-      <address>
-        <ul class="contact">
-          <li class="contact-list">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="contact-list">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contact-list">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+    <footer>
+      <div class="container_center">
+        <div class="footer-nav">
+          <a lang="en" href="index.html" class="page-logo link"
+            ><span>Web</span>Studio</a
+          >
+          <address>
+            <ul class="contact-list-footer">
+              <li class="contact-item-footer">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="contact-item-footer">
+                <a
+                  class="contact-link-footer link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item-footer">
+                <a class="contact-link-footer link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
