@@ -320,9 +320,11 @@ footer .page-logo:focus {
     margin-left: auto;
 }
 
-.team-item-topic {
-    margin: 30px 0 0 0;
+.team-container-item {
+    padding: 30px 0 30px 0;
+}
 
+.team-item-topic {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
@@ -332,7 +334,7 @@ footer .page-logo:focus {
 }
 
 .team-item-text {
-    margin: 10px 0 30px 0;
+    margin-top: 10px;
 
     font-size: 16px;
     line-height: 1.18;
