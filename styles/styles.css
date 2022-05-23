@@ -219,8 +219,8 @@ footer .page-logo:focus {
 .features {
     text-align: center;
 
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .features-list {
@@ -255,7 +255,7 @@ footer .page-logo:focus {
 /* Section Work */
 
 .work {
-    padding-bottom: 95px;
+    padding-bottom: 94px;
 }
 
 .work-topic {
@@ -284,8 +284,8 @@ footer .page-logo:focus {
 /* Section Team */
 
 .team {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     text-align: center;
     background: var(--background-team);
 }
@@ -340,8 +340,8 @@ footer .page-logo:focus {
 /* styles portfolio */
 
 .section_filter_buttons {
-    padding-top: 95px;
-    padding-bottom: 65px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     text-align: center;
 }
 
@@ -375,7 +375,7 @@ footer .page-logo:focus {
 }
 
 .list_container {
-    margin-top: 40px;
+    margin: 50px -15px -30px -15px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -383,24 +383,25 @@ footer .page-logo:focus {
 
 .jobs_container {
     display: none;
-    border: 1px solid #EEEEEE;
     box-sizing: border-box;
-    margin: 0 auto 30px auto;
+    margin: 0 15px 30px 15px;
 }
 
 .list-show {
     display: block;
 }
 
-.jobs-container-topic,
-.jobs-container-text {
-    text-align: left;
-    padding-left: 32px;
-}
-
 .jobs-container-img {
     width: 100%;
     height: auto;
+}
+
+.jobs-container-card {
+    text-align: left;
+    padding-left: 32px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .jobs-container-topic {
