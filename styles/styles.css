@@ -32,7 +32,7 @@ h4,h5,h6,
 p {
     list-style: none;
     margin: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
 img {
@@ -98,7 +98,7 @@ header {
 }
 
 .navigation-item:nth-child(2) {
-    padding:0 50px 0 50px;
+    padding:0 50px;
 }
 
 header a:hover,
@@ -160,7 +160,7 @@ footer .page-logo:focus {
 }
 
 .contact-item-footer:nth-child(2) {
-    padding: 9px 0 9px 0;
+    padding: 9px 0;
 }
 
 .contact-link-footer {
@@ -187,8 +187,6 @@ footer .page-logo:focus {
 }
 
 .main-topic {
-    margin: 0;
-
     color: var(--white);
     text-transform: uppercase;
     font-weight: 900;
@@ -238,7 +236,8 @@ footer .page-logo:focus {
 }
 
 .features-item-topic {
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
+
     color: var(--firsttext-color);
     font-weight: 700;
     font-size: 14px;
@@ -263,8 +262,6 @@ footer .page-logo:focus {
 }
 
 .work-topic {
-    margin: 0;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -295,7 +292,7 @@ footer .page-logo:focus {
 }
 
 .team-topic {
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -403,27 +400,23 @@ footer .page-logo:focus {
 }
 
 .jobs-container-card {
+    padding: 20px 24px;
     text-align: left;
-    padding-left: 32px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
 
 .jobs-container-topic {
-    margin: 0;
-    padding-top: 20px;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.06em;
     color: var(--firsttext-color);
 }
 
 .jobs-container-text {
-    margin: 0;
     padding-top: 4px;
-    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
